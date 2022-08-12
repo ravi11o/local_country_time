@@ -1,5 +1,5 @@
 
-<div class="flex flex-col justify-center">
+<div class="flex flex ml-20">
 
   <.form
       let={f}
@@ -10,7 +10,6 @@
       class="mb-3 xl:w-96 mt-10">
 
     <%= select f, :offset, @offset_list,
-      selected: "India",
       class: "form-select appearance-none
         block
         w-full
@@ -29,15 +28,52 @@
     %>
   </.form>
 
-<div class="flex flex-wrap justify-center space-x-2">
-  <span
+  <.form
+      let={f}
+      for={:continent}
+      id=""
+      phx-change="change-continent"
+      phx-submit="change-continent"
+      class="mb-3 xl:w-96 mt-10 ml-10">
+
+    <%= select f, :name, Enum.map(Timer.list_continents(), &{&1, &1}),
+      class: "form-select appearance-none
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding bg-no-repeat
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+    %>
+  </.form>  
+
+</div>
+
+<div class="flex flex-wrap space-x-2 ml-20" id={"id-#{:rand.uniform(9999)}"}>
+  <span id={"id-#{:rand.uniform(9999)}"}
     class="px-4 py-2 rounded-full text-gray-600 bg-gray-100 font-semibold text-2xl flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease">
     <%= @time %> 
   </span>
 </div>
-  
 
+<div class="flex flex-wrap ml-20">
+  <%= for country <- @countries_in_continent do %>
+    <%= live_render @socket, CountryTimesWeb.CountryLive,
+                        id: "#{country["country"]}-#{:rand.uniform(99999)}",
+                        session: %{"country" => country}
+                         %>
+  
+  <% end %>
 </div>
+
 
 
 

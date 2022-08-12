@@ -1,5 +1,5 @@
 defmodule CountryTimes.UtcOffset do
-  defp list_countries do
+  def list_countries do
     [
       %{
         "country" => "Select a Country",
@@ -11,25 +11,29 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Afghanistan",
         "utc_offset" => "+04:30",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Aland Islands (Finland)",
         "utc_offset" => "+02:00",
         "dst" => "+03:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Albania",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Algeria",
         "utc_offset" => "+01:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Europe"
       },
       %{
         "country" => "American Samoa (USA)",
@@ -63,15 +67,17 @@ defmodule CountryTimes.UtcOffset do
       },
       %{
         "country" => "Argentina",
-        "utc_offset" => "−03:00",
+        "utc_offset" => "-03:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "South America"
       },
       %{
         "country" => "Armenia",
         "utc_offset" => "+04:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Europe"
       },
       %{
         "country" => "Aruba (Netherlands)",
@@ -89,50 +95,58 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Australia, Western Australia (WA)",
         "utc_offset" => "+08:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Australia"
       },
       %{
         "country" => "Australia, South Australia (SA)",
         "utc_offset" => "+09:30",
         "dst" => "+10:30",
-        "dst_period" => "1-st Sunday in October, 02:00 1-st Sunday in April, 03:00"
+        "dst_period" => "1-st Sunday in October, 02:00 1-st Sunday in April, 03:00",
+        "continent" => "Australia"
       },
       %{
         "country" => "Australia, Northern Territory (NT)",
         "utc_offset" => "+09:30",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Australia"
       },
       %{
         "country" =>
           "Australia, New South Wales (NSW), Tasmania (TAS), Victoria (VIC), Australian Capital Territory (ACT) with Canberra capital city",
         "utc_offset" => "+10:00",
         "dst" => "+11:00",
-        "dst_period" => "1-st Sunday in October, 02:00 1-st Sunday in April, 03:00"
+        "dst_period" => "1-st Sunday in October, 02:00 1-st Sunday in April, 03:00",
+        "continent" => "Australia"
       },
       %{
         "country" => "Australia, Queensland (QLD)",
         "utc_offset" => "+10:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Australia"
       },
       %{
         "country" => "Australia, Lord Howe Island (New South Wales)",
         "utc_offset" => "+10:30",
         "dst" => "+11:00",
-        "dst_period" => "1-st Sunday in October, 02:00 1-st Sunday in April, 02:00"
+        "dst_period" => "1-st Sunday in October, 02:00 1-st Sunday in April, 02:00",
+        "continent" => "Australia"
       },
       %{
         "country" => "Australia, Macquarie Island (Tasmania)",
         "utc_offset" => "+11:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Australia"
       },
       %{
         "country" => "Austria",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Azerbaijan",
@@ -156,13 +170,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Bangladesh",
         "utc_offset" => "+06:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Barbados",
-        "utc_offset" => "−04:00",
+        "utc_offset" => "-04:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "North America"
       },
       %{
         "country" => "Belarus",
@@ -174,7 +190,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Belgium",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Belize",
@@ -198,13 +215,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Bhutan",
         "utc_offset" => "+06:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Bolivia",
-        "utc_offset" => "−04:00",
+        "utc_offset" => "-04:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "South America"
       },
       %{
         "country" => "Bonaire (Netherlands)",
@@ -222,39 +241,42 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Botswana",
         "utc_offset" => "+02:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "Brazil, Acre, Southwest Amazonas",
-        "utc_offset" => "−05:00",
+        "utc_offset" => "-05:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "South America"
       },
       %{
         "country" => "Brazil, Most of Amazonas, Rondonia, Roraima",
-        "utc_offset" => "−04:00",
+        "utc_offset" => "-04:00",
         "dst" => nil,
         "dst_period" => nil
       },
       %{
         "country" => "Brazil, Mato Grosso do Sul, Mato Grosso",
-        "utc_offset" => "−04:00",
+        "utc_offset" => "-04:00",
         "dst" => nil,
         "dst_period" => nil
       },
       %{
         "country" =>
           "Brazil, Alagoas, Amapa, Maranhao, Para, Piaui, Ceara, Sergipe, Paraiba, Pernambuco, Rio Grande do Norte, Bahia, Tocantins",
-        "utc_offset" => "−03:00",
+        "utc_offset" => "-03:00",
         "dst" => nil,
         "dst_period" => nil
       },
       %{
         "country" =>
           "Brazil, Distrito Federal, Espirito Santo, Goias, Minas Gerais, Parana, Rio de Janeiro, Rio Grande do Sul, Santa Catarina, Sao Paulo",
-        "utc_offset" => "−03:00",
+        "utc_offset" => "-03:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "South America"
       },
       %{
         "country" => "Brazil, small islands in Atlantic (Fernando de Noronha, Trindade)",
@@ -270,9 +292,10 @@ defmodule CountryTimes.UtcOffset do
       },
       %{
         "country" => "British Virgin Islands (UK)",
-        "utc_offset" => "−04:00",
+        "utc_offset" => "-04:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "North America"
       },
       %{
         "country" => "Brunei",
@@ -308,7 +331,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Cambodia",
         "utc_offset" => "+07:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Cameroon",
@@ -317,22 +341,24 @@ defmodule CountryTimes.UtcOffset do
         "dst_period" => nil
       },
       %{
-        "country" => "Canada – 6 time zones",
-        "utc_offset" => nil,
+        "country" => "Canada(Ottawa)",
+        "utc_offset" => "-04:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "North America"
       },
       %{
         "country" => "Caribbean Netherlands (Netherlands)",
-        "utc_offset" => "−04:00",
+        "utc_offset" => "-04:00",
         "dst" => nil,
         "dst_period" => nil
       },
       %{
         "country" => "Cayman Islands (UK)",
-        "utc_offset" => "−05:00",
+        "utc_offset" => "-05:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "North America"
       },
       %{
         "country" => "Central African Republic",
@@ -353,10 +379,11 @@ defmodule CountryTimes.UtcOffset do
         "dst_period" => "Last Sunday in September, 02:45 1-st Sunday in April, 03:45"
       },
       %{
-        "country" => "Chile, main territory",
-        "utc_offset" => "−04:00",
+        "country" => "Chile, Main territory",
+        "utc_offset" => "-04:00",
         "dst" => "−03:00",
-        "dst_period" => "2-nd Sunday in August, 00:00 2-nd Sunday in May, 00:00"
+        "dst_period" => "2-nd Sunday in August, 00:00 2-nd Sunday in May, 00:00",
+        "continent" => "South America"
       },
       %{
         "country" => "Chile, Magallanes Region",
@@ -374,7 +401,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "China",
         "utc_offset" => "+08:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Christmas Island (Australia)",
@@ -390,9 +418,10 @@ defmodule CountryTimes.UtcOffset do
       },
       %{
         "country" => "Colombia",
-        "utc_offset" => "−05:00",
+        "utc_offset" => "-05:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "South America"
       },
       %{
         "country" => "Comoros",
@@ -426,9 +455,10 @@ defmodule CountryTimes.UtcOffset do
       },
       %{
         "country" => "Costa Rica",
-        "utc_offset" => "−06:00",
+        "utc_offset" => "-06:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "North America"
       },
       %{
         "country" => "Cote d'Ivoire",
@@ -440,13 +470,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Croatia",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Cuba",
-        "utc_offset" => "−05:00",
+        "utc_offset" => "-05:00",
         "dst" => "−04:00",
-        "dst_period" => "2-nd Sunday in March, 00:00 1-st Sunday in November, 01:00"
+        "dst_period" => "2-nd Sunday in March, 00:00 1-st Sunday in November, 01:00",
+        "continent" => "North America"
       },
       %{
         "country" => "Curacao (Netherlands)",
@@ -470,7 +502,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Denmark",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Djibouti",
@@ -492,9 +525,10 @@ defmodule CountryTimes.UtcOffset do
       },
       %{
         "country" => "Ecuador, main territory",
-        "utc_offset" => "−05:00",
+        "utc_offset" => "-05:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "South America"
       },
       %{
         "country" => "Ecuador, Galapagos Province",
@@ -506,7 +540,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Egypt",
         "utc_offset" => "+02:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "El Salvador",
@@ -560,13 +595,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Fiji",
         "utc_offset" => "+12:00",
         "dst" => "+13:00",
-        "dst_period" => "1-st Sunday in November, 02:00 3-rd Sunday in January, 03:00"
+        "dst_period" => "1-st Sunday in November, 02:00 3-rd Sunday in January, 03:00",
+        "continent" => "Asia"
       },
       %{
         "country" => "Finland",
         "utc_offset" => "+02:00",
         "dst" => "+03:00",
-        "dst_period" => "Last Sunday in March, 03:00 Last Sunday in October, 04:00"
+        "dst_period" => "Last Sunday in March, 03:00 Last Sunday in October, 04:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "France",
@@ -575,10 +612,18 @@ defmodule CountryTimes.UtcOffset do
         "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
       },
       %{
+        "country" => "France(DST)",
+        "utc_offset" => "+02:00",
+        "dst" => "+02:00",
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
+      },
+      %{
         "country" => "French Guiana (France)",
-        "utc_offset" => "−03:00",
+        "utc_offset" => "-03:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "South America"
       },
       %{
         "country" => "French Polynesia, Tahiti Island (France)",
@@ -620,13 +665,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Germany",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Ghana",
-        "utc_offset" => "±00:00",
+        "utc_offset" => "00:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "Gibraltar (UK)",
@@ -638,13 +685,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Greece",
         "utc_offset" => "+02:00",
         "dst" => "+03:00",
-        "dst_period" => "Last Sunday in March, 03:00 Last Sunday in October, 04:00"
+        "dst_period" => "Last Sunday in March, 03:00 Last Sunday in October, 04:00",
+        "continent" => "Europe"
       },
       %{
-        "country" => "Greenland (Denmark), most of",
-        "utc_offset" => "−03:00",
+        "country" => "Greenland (Denmark)",
+        "utc_offset" => "-03:00",
         "dst" => "−02:00",
-        "dst_period" => "Last Saturday in March, 22:00 Last Saturday in October, 23:00"
+        "dst_period" => "Last Saturday in March, 22:00 Last Saturday in October, 23:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Greenland (Denmark), Thule Air Base",
@@ -728,13 +777,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Hong Kong (China)",
         "utc_offset" => "+08:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Hungary",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Iceland",
@@ -746,14 +797,16 @@ defmodule CountryTimes.UtcOffset do
         "country" => "India",
         "utc_offset" => "+05:30",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" =>
           "Indonesia, Sumatra Island, Java Island, West Kalimantan, Central Kalimantan",
         "utc_offset" => "+07:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" =>
@@ -772,13 +825,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Iran",
         "utc_offset" => "+03:30",
         "dst" => "+04:30",
-        "dst_period" => "March 21, 00:00 (±1 day) September 21, 00:00 (±1 day)"
+        "dst_period" => "March 21, 00:00 (±1 day) September 21, 00:00 (±1 day)",
+        "continent" => "Asia"
       },
       %{
         "country" => "Iraq",
         "utc_offset" => "+03:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Ireland",
@@ -797,25 +852,29 @@ defmodule CountryTimes.UtcOffset do
         "utc_offset" => "+02:00",
         "dst" => "+03:00",
         "dst_period" =>
-          "Friday before the last Sunday in March, 02:00 Last Sunday in October, 02:00"
+          "Friday before the last Sunday in March, 02:00 Last Sunday in October, 02:00",
+        "continent" => "Asia"
       },
       %{
         "country" => "Italy",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Jamaica",
-        "utc_offset" => "−05:00",
+        "utc_offset" => "-05:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "North America"
       },
       %{
         "country" => "Japan",
         "utc_offset" => "+09:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Jersey (UK)",
@@ -845,7 +904,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Kenya",
         "utc_offset" => "+03:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "Kerguelen Islands (France)",
@@ -953,7 +1013,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Madagascar",
         "utc_offset" => "+03:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "Malawi",
@@ -971,7 +1032,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Maldives",
         "utc_offset" => "+05:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Mali",
@@ -983,7 +1045,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Malta",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Marshall Islands",
@@ -1016,13 +1079,14 @@ defmodule CountryTimes.UtcOffset do
         "dst_period" => nil
       },
       %{
-        "country" => "Mexico, most of",
-        "utc_offset" => "−06:00",
+        "country" => "Mexico",
+        "utc_offset" => "-06:00",
         "dst" => "−05:00",
-        "dst_period" => "1-st Sunday in April, 02:00 Last Sunday in October, 02:00"
+        "dst_period" => "1-st Sunday in April, 02:00 Last Sunday in October, 02:00",
+        "continent" => "North America"
       },
       %{
-        "country" => "Mexico, state of Quintana Roo",
+        "country" => "Mexico, State of Quintana Roo",
         "utc_offset" => "−05:00",
         "dst" => nil,
         "dst_period" => nil
@@ -1097,7 +1161,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Morocco",
         "utc_offset" => "+01:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "Mozambique",
@@ -1133,7 +1198,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Netherlands",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "New Caledonia (France)",
@@ -1145,7 +1211,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "New Zealand",
         "utc_offset" => "+12:00",
         "dst" => "+13:00",
-        "dst_period" => "Last Sunday in September, 02:00 1-st Sunday in April, 03:00"
+        "dst_period" => "Last Sunday in September, 02:00 1-st Sunday in April, 03:00",
+        "continent" => "Australia"
       },
       %{
         "country" => "Nicaragua",
@@ -1157,13 +1224,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Niger",
         "utc_offset" => "+01:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "Nigeria",
         "utc_offset" => "+01:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "Niue (New Zealand)",
@@ -1187,7 +1256,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "North Korea",
         "utc_offset" => "+09:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "North Macedonia",
@@ -1199,7 +1269,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Norway",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Oman",
@@ -1251,15 +1322,17 @@ defmodule CountryTimes.UtcOffset do
       },
       %{
         "country" => "Peru",
-        "utc_offset" => "−05:00",
+        "utc_offset" => "-05:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "South America"
       },
       %{
         "country" => "Philippines",
         "utc_offset" => "+08:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Pitcairn Islands (UK)",
@@ -1271,13 +1344,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Poland",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Portugal, main territory",
-        "utc_offset" => "±00:00",
+        "utc_offset" => "00:00",
         "dst" => "+01:00",
-        "dst_period" => "Last Sunday in March, 01:00 Last Sunday in October, 02:00"
+        "dst_period" => "Last Sunday in March, 01:00 Last Sunday in October, 02:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Portugal, Azores",
@@ -1307,7 +1382,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Romania",
         "utc_offset" => "+02:00",
         "dst" => "+03:00",
-        "dst_period" => "Last Sunday in March, 03:00 Last Sunday in October, 04:00"
+        "dst_period" => "Last Sunday in March, 03:00 Last Sunday in October, 04:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Russia – 11 time zones",
@@ -1391,7 +1467,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Saudi Arabia",
         "utc_offset" => "+03:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Senegal",
@@ -1421,7 +1498,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Singapore",
         "utc_offset" => "+08:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Sint Eustatius (Netherlands)",
@@ -1457,13 +1535,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Somalia",
         "utc_offset" => "+03:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "South Africa",
         "utc_offset" => "+02:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "South Georgia Island (UK)",
@@ -1523,13 +1603,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Sweden",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Switzerland",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Syria",
@@ -1541,7 +1623,8 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Taiwan",
         "utc_offset" => "+08:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Tajikistan",
@@ -1553,13 +1636,15 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Tanzania",
         "utc_offset" => "+03:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Africa"
       },
       %{
         "country" => "Thailand",
         "utc_offset" => "+07:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Timor-Leste",
@@ -1569,7 +1654,7 @@ defmodule CountryTimes.UtcOffset do
       },
       %{
         "country" => "Togo",
-        "utc_offset" => "±00:00",
+        "utc_offset" => "00:00",
         "dst" => nil,
         "dst_period" => nil
       },
@@ -1593,7 +1678,7 @@ defmodule CountryTimes.UtcOffset do
       },
       %{
         "country" => "Tristan da Cunha (UK)",
-        "utc_offset" => "±00:00",
+        "utc_offset" => "00:00",
         "dst" => nil,
         "dst_period" => nil
       },
@@ -1643,31 +1728,57 @@ defmodule CountryTimes.UtcOffset do
         "country" => "United Arab Emirates",
         "utc_offset" => "+04:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "United Kingdom",
-        "utc_offset" => "±00:00",
+        "utc_offset" => "00:00",
         "dst" => "+01:00",
-        "dst_period" => "Last Sunday in March, 01:00 Last Sunday in October, 02:00"
+        "dst_period" => "Last Sunday in March, 01:00 Last Sunday in October, 02:00",
+        "continent" => "Europe"
       },
       %{
-        "country" => "United States of America – 9 time zones",
-        "utc_offset" => nil,
+        "country" => "USA(Washington)(EDT)",
+        "utc_offset" => "-04:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "North America"
+      },
+      %{
+        "country" => "USA(Chicago)(CDT)",
+        "utc_offset" => "-05:00",
+        "dst" => nil,
+        "dst_period" => nil,
+        "continent" => "North America"
+      },
+      %{
+        "country" => "USA(Los Angeles)(PDT)",
+        "utc_offset" => "-07:00",
+        "dst" => nil,
+        "dst_period" => nil,
+        "continent" => "North America"
+      },
+      %{
+        "country" => "USA(Alaska Daylight Time)",
+        "utc_offset" => "-08:00",
+        "dst" => nil,
+        "dst_period" => nil,
+        "continent" => "North America"
       },
       %{
         "country" => "Uruguay",
-        "utc_offset" => "−03:00",
+        "utc_offset" => "-03:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "South America"
       },
       %{
         "country" => "US Virgin Islands (USA)",
-        "utc_offset" => "−04:00",
+        "utc_offset" => "-04:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "North America"
       },
       %{
         "country" => "Uzbekistan",
@@ -1685,19 +1796,22 @@ defmodule CountryTimes.UtcOffset do
         "country" => "Vatican City (Holy See)",
         "utc_offset" => "+01:00",
         "dst" => "+02:00",
-        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00"
+        "dst_period" => "Last Sunday in March, 02:00 Last Sunday in October, 03:00",
+        "continent" => "Europe"
       },
       %{
         "country" => "Venezuela",
-        "utc_offset" => "−04:00",
+        "utc_offset" => "-04:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "South America"
       },
       %{
         "country" => "Vietnam",
         "utc_offset" => "+07:00",
         "dst" => nil,
-        "dst_period" => nil
+        "dst_period" => nil,
+        "continent" => "Asia"
       },
       %{
         "country" => "Wake Island (USA)",
@@ -1730,10 +1844,5 @@ defmodule CountryTimes.UtcOffset do
         "dst_period" => nil
       }
     ]
-  end
-
-  def list_countries_with_offset() do
-    list_countries()
-    |> Enum.map(&{&1["country"], &1["utc_offset"]})
   end
 end
